@@ -18,9 +18,9 @@ struct Survey {
     let name: String
     let language: String
     
-    var endpoint: URL? {
+    var putEndpoint: URL? {
         
-        
+        return SurveyController.baseURL?.appendingPathComponent("\(self.identifier.uuidString)").appendingPathExtension("json")
     }
     
     //==================================================

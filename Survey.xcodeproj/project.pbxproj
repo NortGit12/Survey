@@ -12,6 +12,8 @@
 		1F60A5911DB925B80052022C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F60A5901DB925B80052022C /* Assets.xcassets */; };
 		1F60A5941DB925B80052022C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F60A5921DB925B80052022C /* LaunchScreen.storyboard */; };
 		1F60A59C1DB927F50052022C /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A59B1DB927F50052022C /* Survey.swift */; };
+		1F60A59E1DB92DE90052022C /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A59D1DB92DE90052022C /* SurveyController.swift */; };
+		1F60A5A01DB932CC0052022C /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A59F1DB932CC0052022C /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1F60A5931DB925B80052022C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F60A5951DB925B80052022C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F60A59B1DB927F50052022C /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		1F60A59D1DB92DE90052022C /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
+		1F60A59F1DB932CC0052022C /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				1F60A5891DB925B80052022C /* AppDelegate.swift */,
 				1F60A58D1DB925B80052022C /* Main.storyboard */,
 				1F60A59B1DB927F50052022C /* Survey.swift */,
+				1F60A59D1DB92DE90052022C /* SurveyController.swift */,
+				1F60A59F1DB932CC0052022C /* NetworkController.swift */,
 				1F60A5901DB925B80052022C /* Assets.xcassets */,
 				1F60A5921DB925B80052022C /* LaunchScreen.storyboard */,
 				1F60A5951DB925B80052022C /* Info.plist */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F60A5A01DB932CC0052022C /* NetworkController.swift in Sources */,
+				1F60A59E1DB92DE90052022C /* SurveyController.swift in Sources */,
 				1F60A58A1DB925B80052022C /* AppDelegate.swift in Sources */,
 				1F60A59C1DB927F50052022C /* Survey.swift in Sources */,
 			);

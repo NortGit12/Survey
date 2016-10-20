@@ -15,6 +15,7 @@
 		1F60A59E1DB92DE90052022C /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A59D1DB92DE90052022C /* SurveyController.swift */; };
 		1F60A5A01DB932CC0052022C /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A59F1DB932CC0052022C /* NetworkController.swift */; };
 		1F60A5A61DB93B5D0052022C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A5A51DB93B5D0052022C /* SurveyViewController.swift */; };
+		1F60A5A91DB941020052022C /* LanguagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60A5A81DB941020052022C /* LanguagesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F60A59D1DB92DE90052022C /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		1F60A59F1DB932CC0052022C /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		1F60A5A51DB93B5D0052022C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		1F60A5A81DB941020052022C /* LanguagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		1F60A5A71DB93B620052022C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1F60A5A81DB941020052022C /* LanguagesTableViewController.swift */,
 				1F60A5A51DB93B5D0052022C /* SurveyViewController.swift */,
 			);
 			name = ViewController;
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F60A5A01DB932CC0052022C /* NetworkController.swift in Sources */,
+				1F60A5A91DB941020052022C /* LanguagesTableViewController.swift in Sources */,
 				1F60A59E1DB92DE90052022C /* SurveyController.swift in Sources */,
 				1F60A58A1DB925B80052022C /* AppDelegate.swift in Sources */,
 				1F60A59C1DB927F50052022C /* Survey.swift in Sources */,

@@ -9,43 +9,55 @@
 import UIKit
 
 class LanguagesTableViewController: UITableViewController {
+    
+    //==================================================
+    // MARK: - Properties
+    //==================================================
+    
+    var results = [Survey]() {
+        
+        didSet {
+            
+            DispatchQueue.main.async {
+                
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    //==================================================
+    // MARK: - General
+    //==================================================
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        SurveyController.fetchResults { (surveys) in
+            
+            self.results = surveys
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    //==================================================
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    //==================================================
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return results.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath)
 
-        // Configure the cell...
+        let result = results[indexPath.row]
+        cell.textLabel?.text = result.language
+        cell.detailTextLabel?.text = result.name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
